@@ -11,7 +11,7 @@ const forecast = (lat, lon, cb) => {
     } else {
       cb(
         undefined,
-        `${body.current.condition.text} --> it's currently ${body.current.temp_c} degrees out. There's a ${body.current.precip_in}% chance of rain.`
+        `${body.current.condition.text} --> it's currently ${body.current.temp_c} degrees out, wind is ${body.current.wind_kph} km/h.\nThere's a ${body.current.precip_in}% chance of rain.`
       );
     }
   });
